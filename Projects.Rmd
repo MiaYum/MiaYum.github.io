@@ -29,3 +29,5 @@ The boxplot compared numbers and scores distribution of the most popular cuisine
 * Pie Chart
 
 The pie chart represents the proportion of grades of restaurants.
+
+You can see the [Dashboard](dashboard.html).
