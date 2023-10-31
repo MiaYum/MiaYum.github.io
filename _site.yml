@@ -1,0 +1,20 @@
+name: "Mia website"
+output_dir: "."
+navbar:
+  title: <i class="fa-solid fa-person-digging"></i>
+  right:
+    - text: "About"
+      href: about.html
+    - text: "Projects"
+      href: projects.html
+    - text: "Plotly"
+      href: plotly.html
+    - text: "Dashboard"
+      href: dashboard.html
+    - icon: fa-envelope fa-lg
+      href: mailto:<you@youremail.com>
+output:
+  html_document:
+    theme: simplex
+    highlight: textmate
+    css: styles.css
