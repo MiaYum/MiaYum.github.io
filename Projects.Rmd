@@ -1,0 +1,31 @@
+---
+title: "About this website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# Previous
+
+Loading...
+
+# NYC Restaurant Inspections
+
+The New York City Department of Health and Mental Hygiene (DOHMH) conducts unannounced restaurant inspections on an annual basis in order to check for compliance with policies on food handling, food temperature, personal hygiene of restaurant workers, and vermin control. Regulation violations are each worth a pre-specified number of points, which are totaled at the end of the inspection. Scores are converted into grades, where a lower score earns a higher grade.
+
+More details about the scoring and grading process can be found [here](https://www.nyc.gov/assets/doh/downloads/pdf/rii/how-we-score-grade.pdf)
+
+I drop the unscored restaurants in the datasets and futher build the dashboard.
+
+* Histogram
+
+The histogram shows the scores distribution among the restaurants in the different boroughs.
+
+* Boxplot
+
+The boxplot compared numbers and scores distribution of the most popular cuisines.
+
+* Pie Chart
+
+The pie chart represents the proportion of grades of restaurants.
