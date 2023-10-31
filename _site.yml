@@ -1,20 +1,20 @@
 name: "Mia website"
 output_dir: "."
 navbar:
-  title: <i class="fa-solid fa-person-digging"></i>
+  title: <i class="fa-solid fa-person-digging"></i> Mia
   right:
     - text: "About"
       href: about.html
     - text: "Projects"
       href: projects.html
-    - text: "Plotly"
-      href: plotly.html
     - text: "Dashboard"
       href: dashboard.html
     - icon: fa-envelope fa-lg
-      href: mailto:<you@youremail.com>
+      href: mailto:<my2838@cumc.columbia.edu>
+    - icon: fa-solid fa-mobile-screen
+      href: tel:+19296574130
 output:
   html_document:
     theme: simplex
     highlight: textmate
-    css: styles.css
+    css: style.css

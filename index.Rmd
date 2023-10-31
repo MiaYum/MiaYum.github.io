@@ -5,10 +5,13 @@ output:
     toc: true
     toc_float: true
 ---
+![](pics/tianzhong.GIF)
 
 ### Welcome!
 
-I am **Mia Yu**.
+My full name is **Mengyuan Yu.** 
+
+You must try very hard to pronunce it if you are not Chinese, so you call me **Mia**.
 
 Nice to meet you :)
 
@@ -26,9 +29,15 @@ A quick introduction about my experience..
 
 For more my personal academic information, please view my [resume](Resume-my.pdf).
 
-# my TMI 
+# If intersted in my TMI 
 
-* I hate cooking.
+* I go crazy for cats, crepe, music and everything pink.
+
+* My career goal is to become a super cool data analyst, it would be better if related to health field.
+
+* I hope the world is full of love and peace.
+
+* Recently, my happiest thing is I AM GOING TO PARIS!
 
 # How to contract me?
 
