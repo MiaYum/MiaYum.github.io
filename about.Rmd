@@ -1,0 +1,14 @@
+---
+title: "About this website"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+---
+
+# About
+
+Loading...
+
+You can go [this page](https://www.snh48.com/#SNH) and enjoy everything for a while :D
+ 
