@@ -1,0 +1,62 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+
+library(tidyverse)
+library(plotly)
+library(p8105.datasets)
+
+data("rest_inspec")
+
+rest_inspec =
+  rest_inspec |>
+  drop_na(score)
+
+```
+
+Column {data-width=600}
+-----------------------------------------------------------------------
+
+### Histogram
+
+```{r}
+rest_inspec |>
+  filter( score <= 50) |>
+  plot_ly(x = ~score, color = ~boro, type = "histogram" , colors = "viridis") |>
+  layout(title = "Scores in Differnet Boroughs")
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Boxplot
+
+```{r}
+rest_inspec |>
+  count(cuisine_description) |>
+  filter(n > 5000) |>
+  left_join(rest_inspec, by = "cuisine_description") |>
+  mutate(cuisine_description = recode(
+    cuisine_description,
+    'Latin (Cuban, Dominican, Puerto Rican, South & Central American)' = 'Latin'
+   )) |>
+  plot_ly(y = ~ score, type = "box" , color = ~cuisine_description ,colors = "viridis")|>
+  layout( title = "Scores Between Main Cuisines")
+
+```
+
+### Pie Chart
+
+```{r}
+rest_inspec |>
+  plot_ly( labels = ~grade, type = "pie" , colors = "viridis") |>
+  layout( title = "Grades")
+```
+
